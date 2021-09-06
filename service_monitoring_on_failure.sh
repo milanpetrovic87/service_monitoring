@@ -1,6 +1,6 @@
 #!/bin/bash
 
-service=elasticsearch
+service=your_service # for instance elasticsearch
 /bin/systemctl -q is-active "$service.service"
 status=$?
 if [ "$status" == 0 ]; then
